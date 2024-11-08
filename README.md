@@ -1,0 +1,2 @@
+# inyuo.github.io
+blog
