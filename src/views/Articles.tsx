@@ -66,6 +66,7 @@ export default function Articles(props: ArticlesProps) {
         milestone: props.milestone,
         ...query,
       });
+      console.log(list)
 
       setArticles(list.map(ArticleModel.from));
     }, [props.milestone, query]),
