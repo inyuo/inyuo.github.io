@@ -35,5 +35,5 @@ export default defineConfig({
       jsx: 'react',
       scale: 1.2,
     }),
-  ],
+],
 });
