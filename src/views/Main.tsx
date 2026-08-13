@@ -23,6 +23,7 @@ import { loadThemeStyles } from '../utils';
 const title = import.meta.env.VITE_TITLE;
 const email = import.meta.env.VITE_EMAIL;
 const githubUrl = import.meta.env.VITE_GITHUB_URL;
+const owner = import.meta.env.VITE_GITHUB_OWNER;
 
 const Wrapper = styled.div`
   ${tw`relative pb-16 min-h-screen flex flex-col`}
@@ -110,9 +111,11 @@ export default function Main() {
 
               <Divider />
 
-              <NavItem href={`mailto:${email}`}>
-                <IconEmail />
-              </NavItem>
+              {email && (
+                <NavItem href={`mailto:${email}`}>
+                  <IconEmail />
+                </NavItem>
+              )}
               <NavItem href={githubUrl} target="_blank">
                 <IconGithub />
               </NavItem>
@@ -133,7 +136,7 @@ export default function Main() {
             <a tw="hover:text-blue-500" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
               CC BY-NC-SA 4.0
             </a>
-            <span tw="ml-2">2016-present © varHarrie</span>
+            <span tw="ml-2">2016-present © {owner}</span>
           </FooterCenter>
         </Footer>
       </Wrapper>
