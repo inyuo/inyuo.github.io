@@ -1,0 +1,136 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Anthony Fu @ antfu.me" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img "Anthony Fu @ antfu.me" [ref=e5]
+    - button "Scroll to top"
+    - navigation [ref=e8]:
+      - generic [ref=e9]:
+        - link "Blog" [ref=e10] [cursor=pointer]:
+          - /url: /posts
+        - link "Projects" [ref=e11] [cursor=pointer]:
+          - /url: /projects
+        - link "Talks" [ref=e12] [cursor=pointer]:
+          - /url: /talks
+        - link "Sponsors" [ref=e13] [cursor=pointer]:
+          - /url: /sponsors-list
+        - link "Podcasts" [ref=e14] [cursor=pointer]:
+          - /url: /podcasts
+        - link "Photos" [ref=e16] [cursor=pointer]:
+          - /url: /photos
+        - link "Demos" [ref=e18] [cursor=pointer]:
+          - /url: /demos
+        - link "Bluesky" [ref=e20] [cursor=pointer]:
+          - /url: https://bsky.app/profile/antfu.me
+        - link "GitHub" [ref=e22] [cursor=pointer]:
+          - /url: https://github.com/antfu
+        - link "RSS" [ref=e24] [cursor=pointer]:
+          - /url: /feed.xml
+        - generic "Toggle Color Scheme" [ref=e26] [cursor=pointer]
+  - main [ref=e28]:
+    - heading "Anthony Fu" [level=1] [ref=e30]
+    - article [ref=e31]:
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: Hey! I’m Anthony Fu, a fanatical open sourceror and design engineer.
+        - paragraph [ref=e34]:
+          - text: Working at
+          - link "Vercel" [ref=e35] [cursor=pointer]:
+            - /url: https://vercel.com
+          - text: /
+          - link "Nuxt" [ref=e37] [cursor=pointer]:
+            - /url: https://github.com/nuxt/nuxt
+          - text: Creator of
+          - link "Vitest" [ref=e39] [cursor=pointer]:
+            - /url: https://github.com/vitest-dev/vitest
+          - link "Slidev" [ref=e41] [cursor=pointer]:
+            - /url: https://github.com/slidevjs/slidev
+          - link "VueUse" [ref=e43] [cursor=pointer]:
+            - /url: https://github.com/vueuse/vueuse
+          - link "UnoCSS" [ref=e45] [cursor=pointer]:
+            - /url: https://github.com/unocss/unocss
+          - link "Elk" [ref=e47] [cursor=pointer]:
+            - /url: https://github.com/elk-zone/elk
+          - link "Type Challenges" [ref=e49] [cursor=pointer]:
+            - /url: https://github.com/type-challenges/type-challenges
+          - text: Core team of
+          - link "Vue" [ref=e51] [cursor=pointer]:
+            - /url: https://github.com/vuejs/core
+          - link "Nuxt" [ref=e53] [cursor=pointer]:
+            - /url: https://github.com/nuxt/nuxt
+          - link "Vite" [ref=e55] [cursor=pointer]:
+            - /url: https://github.com/vitejs/vite
+          - text: Maintaining
+          - link "Shiki" [ref=e57] [cursor=pointer]:
+            - /url: https://github.com/shikijs/shiki
+          - link "Twoslash" [ref=e59] [cursor=pointer]:
+            - /url: https://github.com/twoslashes/twoslash
+          - link "ESLint Stylistic" [ref=e61] [cursor=pointer]:
+            - /url: https://github.com/eslint-stylistic/eslint-stylistic
+        - paragraph [ref=e63]:
+          - text: Dreaming up cool ideas and making them come true is where my passion lies. I am enthusiastic about building tools that help myself and others to be more productive and enjoy the process of crafting. You can find my
+          - link "full projects list here" [ref=e64] [cursor=pointer]:
+            - /url: /projects
+          - text: .
+        - paragraph [ref=e65]:
+          - text: I give
+          - link "talks" [ref=e66] [cursor=pointer]:
+            - /url: /talks
+          - text: and write
+          - link "blog posts" [ref=e67] [cursor=pointer]:
+            - /url: /posts
+          - text: about open source, coding, etc. I am co-hosting a podcast
+          - link [ref=e68] [cursor=pointer]:
+            - /url: https://bento.me/nocodingtoday
+            - emphasis [ref=e69]: No Coding Today
+          - text: (in Mandarin). Occasionally, I do live coding streams on
+          - link "YouTube" [ref=e70] [cursor=pointer]:
+            - /url: https://www.youtube.com/anthonyfu7
+          - text: and
+          - link "哔哩哔哩" [ref=e71] [cursor=pointer]:
+            - /url: https://space.bilibili.com/668380
+          - text: . From time to time, I make some generative-art, interactivity experiments on
+          - link "100.antfu.me" [ref=e72] [cursor=pointer]:
+            - /url: https://100.antfu.me/
+          - text: .
+        - paragraph [ref=e73]:
+          - text: Outside of programming, I enjoy doing photography and traveling. I post
+          - link "photos on this page" [ref=e74] [cursor=pointer]:
+            - /url: /photos
+          - text: . In case you are interested, here are the
+          - link "hardware/software I use" [ref=e75] [cursor=pointer]:
+            - /url: /use
+          - text: .
+        - separator [ref=e76]
+        - paragraph [ref=e77]: Find me on
+        - paragraph [ref=e78]:
+          - link "GitHub" [ref=e79] [cursor=pointer]:
+            - /url: https://github.com/antfu
+          - link "Bluesky" [ref=e81] [cursor=pointer]:
+            - /url: https://bsky.app/profile/antfu.me
+          - link "Discord Server" [ref=e83] [cursor=pointer]:
+            - /url: https://chat.antfu.me
+          - link "Twitter" [ref=e85] [cursor=pointer]:
+            - /url: https://x.com/antfu7
+          - link "中文推" [ref=e87] [cursor=pointer]:
+            - /url: https://x.com/antfuzh
+          - link "日本語" [ref=e89] [cursor=pointer]:
+            - /url: https://x.com/antfujp
+        - paragraph [ref=e91]:
+          - text: Or mail me at
+          - generic [ref=e92]: hiantfu.me
+        - separator [ref=e94]
+        - paragraph [ref=e95]: If you enjoy my work and find them useful, consider sponsor me and the ecosystem to help Open Source sustainable. Thank you!
+        - paragraph [ref=e96]:
+          - link "Sponsor the Ecosystem" [ref=e97] [cursor=pointer]:
+            - /url: https://opencollective.com/antfu
+          - link "How does this work?" [ref=e100] [cursor=pointer]:
+            - /url: /posts/sponsorship-forwarding
+        - paragraph [ref=e101]:
+          - link "Sponsor to support Anthony" [ref=e102] [cursor=pointer]:
+            - /url: https://github.com/sponsors/antfu
+          - link "在爱发电上支持我" [ref=e104] [cursor=pointer]:
+            - /url: https://afdian.com/a/antfu
+    - generic [ref=e107]:
+      - link "CC BY-NC-SA 4.0" [ref=e108] [cursor=pointer]:
+        - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      - text: 2021-PRESENT © Anthony Fu

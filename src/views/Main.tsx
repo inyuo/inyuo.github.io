@@ -29,19 +29,19 @@ const Wrapper = styled.div`
   ${tw`relative pb-16 min-h-screen flex flex-col`}
 `;
 
-const Header = tw.header`h-20 w-full`;
+const Header = tw.header`h-24 w-full`;
 
 const HeaderCenter = tw.div`mx-auto max-w-screen-lg flex px-8 items-center h-full text-slate-500 font-semibold`;
 
 const TitleLink = styled(Link)`
-  ${tw`text-lg`}
+  ${tw`text-lg mr-8`}
 `;
 
-const Title = tw.span`mx-0.5 text-blue-500`;
+const Title = tw.span`text-xl font-bold text-gray-900 dark:text-white`;
 
-const Nav = tw.nav`grid gap-3 lg:gap-6 grid-flow-col ml-auto leading-5`;
+const Nav = tw.nav`grid gap-4 lg:gap-8 grid-flow-col ml-auto leading-5`;
 
-const navItemStyle = tw`opacity-60 cursor-pointer hover:(opacity-100 text-blue-500)`;
+const navItemStyle = tw`text-sm opacity-60 cursor-pointer hover:(opacity-100 text-emerald-600 dark:text-emerald-400)`;
 
 const NavItem = styled.a`
   ${navItemStyle}
@@ -51,20 +51,20 @@ const NavLinkItem = styled(NavLink)`
   ${navItemStyle}
 
   &.active {
-    ${tw`opacity-100 text-blue-500`}
+    ${tw`opacity-100 text-emerald-600 dark:text-emerald-400`}
   }
 `;
 
-const Divider = tw.div`w-[1px] h-full bg-gray-200 dark:bg-gray-800`;
+const Divider = tw.div`w-[1px] h-full bg-gray-300 dark:bg-gray-700`;
 
 const Footer = tw.footer`
   absolute bottom-4 left-0 
   space-x-2 w-full
-  text-sm text-center text-slate-300
+  text-xs text-center text-slate-400
   select-none
 `;
 
-const FooterCenter = tw.div`mx-auto max-w-screen-lg dark:text-slate-800`;
+const FooterCenter = tw.div`mx-auto max-w-screen-lg dark:text-slate-500`;
 
 export default function Main() {
   const { t } = useTranslation();
@@ -91,22 +91,18 @@ export default function Main() {
         <Header>
           <HeaderCenter>
             <TitleLink to="/">
-              <span>://</span>
               <Title>{title}</Title>
             </TitleLink>
 
             <Nav>
               <NavLinkItem to="/posts">
-                <IconPosts tw="inline lg:hidden" />
-                <span tw="hidden lg:inline">{t('tab.posts')}</span>
+                <span>{t('tab.posts')}</span>
               </NavLinkItem>
               <NavLinkItem to="/snippets">
-                <IconSnippets tw="inline lg:hidden" />
-                <span tw="hidden lg:inline">{t('tab.snippets')}</span>
+                <span>{t('tab.snippets')}</span>
               </NavLinkItem>
               <NavLinkItem to="/projects">
-                <IconProjects tw="inline lg:hidden" />
-                <span tw="hidden lg:inline">{t('tab.projects')}</span>
+                <span>{t('tab.projects')}</span>
               </NavLinkItem>
 
               <Divider />
@@ -133,7 +129,7 @@ export default function Main() {
 
         <Footer>
           <FooterCenter>
-            <a tw="hover:text-blue-500" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <a tw="hover:text-emerald-600 dark:hover:text-emerald-400" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
               CC BY-NC-SA 4.0
             </a>
             <span tw="ml-2">2016-present © {owner}</span>
